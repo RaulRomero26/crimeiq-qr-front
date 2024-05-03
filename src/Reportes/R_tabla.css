@@ -1,0 +1,79 @@
+.tabla-container {
+  max-height: 500px;
+  overflow-y: auto;
+  margin-top: 30px;
+}
+
+.tabla-datos {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.tabla-datos th {
+  background-color: rgba(255, 166, 0, 0.911);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.tabla-datos td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.tabla-datos tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.tabla-titulo {
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+}
+
+.filtros-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filtros {
+  margin-bottom: 20px;
+}
+
+.tabla-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.tabla-datos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-datos th,
+.tabla-datos td {
+  padding: 8px;
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .tabla-datos th,
+  .tabla-datos td {
+    padding: 4px;
+  }
+
+  .filtros-container {
+    padding: 10px;
+  }
+
+  .tabla-container {
+    margin-top: 10px; /* Reduce el margen superior */
+  }
+
+  .tabla-datos th,
+  .tabla-datos td {
+    font-size: 12px; /* Reducir el tamaño de la fuente para dispositivos móviles */
+  }
+}

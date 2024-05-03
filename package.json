@@ -1,0 +1,42 @@
+{
+  "name": "crimeiqsolution",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.3",
+    "axios": "^1.6.8",
+    "chart.js": "^4.4.2",
+    "jsqr": "^1.4.0",
+    "mongoose": "^8.3.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-chartjs-2": "^5.2.0",
+    "react-clock": "^4.6.0",
+    "react-datepicker": "^6.6.0",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
+    "react-qrcode-scanner": "^1.1.7",
+    "react-redux": "^9.1.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.22.3",
+    "sweetalert2": "^11.10.7",
+    "vite-plugin-pwa": "^0.19.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
+  }
+}

@@ -1,0 +1,22 @@
+/* Estilos para el botón de ayuda */
+.ayuda-button {
+  background-color: rgb(248, 248, 248);
+  color: black; /* Cambié el color del texto a negro */
+  font-weight: bold;
+  width: 150px; /* Ancho del botón */
+  height: 150px; /* Alto del botón */
+  background-size: contain; /* Ajusta el tamaño de la imagen para que se ajuste dentro del botón */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  }
+  
+  /* Estilos para la imagen dentro del botón */
+  .ayuda-button img {
+    width: 130px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  

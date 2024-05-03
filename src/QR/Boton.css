@@ -1,0 +1,48 @@
+.emergencia-container {
+    text-align: center;
+  }
+  
+  .emergencia-title {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .emergencia-title span {
+    color: white;
+  }
+  
+  .emergencia-img {
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+    width: 400px;
+    height: 390px;
+
+    margin: auto; /* Centra horizontal y verticalmente */
+    display: block; /* Para que funcione el margin:auto */
+  }
+  
+  .emergencia-message {
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    .emergencia-title {
+      font-size: 24px;
+    }
+  
+    .emergencia-img {
+
+      width: 300px;
+      height:290px;
+    }
+  }
+  
+  .emergencia-button-title {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+  

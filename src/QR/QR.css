@@ -1,0 +1,53 @@
+
+.qr-result-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.qr-camera-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.qr-camera-container .qr-scanner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.qr-result-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.qr-result-container p {
+  color: #333;
+}
+
+.qr-btn-container {
+  background-color: rgb(248, 248, 248);
+  color: black; /* Cambié el color del texto a negro */
+  font-weight: bold;
+  width: 150px; /* Ancho del botón */
+  height: 150px; /* Alto del botón */
+  background-size: contain; /* Ajusta el tamaño de la imagen para que se ajuste dentro del botón */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.qr-btn-container img {
+  width: 110PX;
+  height: 110PX;
+}
