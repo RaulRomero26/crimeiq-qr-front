@@ -13,7 +13,7 @@ const TablaDatos = () => {
   useEffect(() => {
     const obtenerDatos = async () => {
       try {
-        const response = await axios.get('https://api.crimeiq.org/api/recorridos');
+        const response = await axios.get('http://127.0.0.1:5000/api/recorridos');
         if (response.status !== 200) {
           throw new Error('Error al obtener los datos');
         }

@@ -37,7 +37,7 @@ const Formulario = () => {
         };
 
         try {
-            const response = await axios.post('https://api.crimeiq.org/guardar_reporte', formData);
+            const response = await axios.post('http://127.0.0.1:5000/guardar_reporte', formData);
             console.log(response.data);
             setMensajeExito('La incidencia fue enviada con éxito');
             handleCloseModal(); // Cerrar el modal después de enviar el formulario

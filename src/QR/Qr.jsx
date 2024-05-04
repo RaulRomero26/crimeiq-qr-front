@@ -74,7 +74,7 @@ function QR() {
 
   // Agrega esta función dentro del componente QR
   const enviarResultadoABaseDeDatos = (resultado) => {
-    axios.post('https://api.crimeiq.org/guardar_datos', resultado)
+    axios.post('http://127.0.0.1:5000/guardar_datos', resultado)
       .then(response => {
         console.log(response.data);
         // Aquí puedes manejar la respuesta del servidor si es necesario

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 export const authApi = axios.create({
-    baseURL: 'https://api.crimeiq.org/'
+    baseURL: 'http://127.0.0.1:5000/'
 });
 
 // Todo: configurar interceptores
