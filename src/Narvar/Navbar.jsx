@@ -33,7 +33,6 @@ function CustomNavbar() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar} />
             <Navbar.Collapse id="basic-navbar-nav" className={expanded ? 'show' : ''}>
               <Nav className="mr-auto"> 
-                <Nav.Link href="#home">INICIO</Nav.Link>
                 <Nav.Link as={NavLink} to={'QrScanner'}>QR TRACK</Nav.Link>
                 <Nav.Link as={NavLink} to={'REPORTE'}>REPORTES</Nav.Link>
                 <button className='float-end btn btn-danger' onClick={startLogout}>Salir</button>
@@ -45,10 +44,9 @@ function CustomNavbar() {
       <Row className='espaciopagina'>
         <Col>
           <Routes>
-            <Route path={'home'} element={<InicioPage/>}/>
             <Route path={'QrScanner'} element={<QrPage/>}/>
             <Route path={'REPORTE'} element={<ReportePage/>}/>
-            <Route path={'*'} element={<InicioPage/>}/>
+            <Route path={'*'} element={<QrPage/>}/>
           </Routes>
         </Col>
       </Row>

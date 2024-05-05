@@ -112,3 +112,13 @@
 .form-container button[type="button"] {
   font-weight: bold;
 }
+
+
+p {
+  color: #bf1650;
+}
+
+p::before {
+  display: inline;
+  content: "⚠ ";
+}

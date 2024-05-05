@@ -54,8 +54,8 @@ export const AppRouter = () => {
               )
               : (
                 <>
-                    <Route path="/side/*" element={ <CustomNavbar /> } />
-                    <Route path="/*" element={ <Navigate to="/side" /> } />
+                    <Route path="/scanner/*" element={ <CustomNavbar /> } />
+                    <Route path="/*" element={ <Navigate to="/scanner" /> } />
                 </>
             )
           } 

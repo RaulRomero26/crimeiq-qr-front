@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import alertaImg from '../assets/Alerta.png';
+import alertaImg from '../../assets/Alerta.png';
 import './Boton.css';
 
-function Emergencia() {
+export const BotonEmegencia = () => {
     const [mostrarMensaje, setMostrarMensaje] = useState(false);
     const [segundosRestantes, setSegundosRestantes] = useState(5);
   
@@ -49,6 +49,3 @@ function Emergencia() {
       </div>
     );
   }
-  
-  
-export default Emergencia;
