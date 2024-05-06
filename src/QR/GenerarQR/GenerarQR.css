@@ -114,11 +114,11 @@
 }
 
 
-p {
+.invalid-form {
   color: #bf1650;
 }
 
-p::before {
+.invalid-form::before {
   display: inline;
   content: "⚠ ";
 }

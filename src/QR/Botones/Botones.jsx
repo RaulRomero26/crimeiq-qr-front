@@ -38,12 +38,12 @@ export const Botones = () => {
                 <div className="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center" title="GENERAR CÓDIGO QR" onClick={handleShow1}>
                     <div className="btn1" style={{ backgroundImage: `url(${QrImg})` }} ></div>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center" title="ESCANEAR CÓDIGO QR" onClick={handleShow2}>
+                {/* <div className="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center" title="ESCANEAR CÓDIGO QR" onClick={handleShow2}>
                     <div className="btn1" style={{ backgroundImage: `url(${QrImg1})` }} ></div>
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center" title="REPORTAR INCIDENCIA" onClick={handleShow3}>
                     <div className="btn1" style={{ backgroundImage: `url(${IncidenciaImg})` }} ></div>
-                </div>
+                </div> */}
                 <div className="col-lg-3 col-md-6 col-sm-6 d-flex justify-content-center" title="AYUDA" onClick={handleShow4}>
                     <div className="btn1" style={{ backgroundImage: `url(${AyudaImg})` }} ></div>
                 </div>

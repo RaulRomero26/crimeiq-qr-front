@@ -75,7 +75,7 @@ export const GenerateQR = () => {
             <ErrorMessage
               errors={errors}
               name="nombre"
-              render={({ message }) => <p>{message}</p>}
+              render={({ message }) => <p className="invalid-form">{message}</p>}
             />
           </div>
           <div className="form-group">
@@ -93,7 +93,7 @@ export const GenerateQR = () => {
             <ErrorMessage
               errors={errors}
               name="ubicacion"
-              render={({ message }) => <p>{message}</p>}
+              render={({ message }) => <p className="invalid-form">{message}</p>}
             />
           </div>
           <div className="form-group">
@@ -114,7 +114,7 @@ export const GenerateQR = () => {
             <ErrorMessage
               errors={errors}
               name="lat"
-              render={({ message }) => <p>{message}</p>}
+              render={({ message }) => <p className="invalid-form">{message}</p>}
             />
             <input
               type="text"
@@ -132,7 +132,7 @@ export const GenerateQR = () => {
             <ErrorMessage
               errors={errors}
               name="log"
-              render={({ message }) => <p>{message}</p>}
+              render={({ message }) => <p className="invalid-form">{message}</p>}
             />
           </div>
           <div className="form-group">
@@ -156,7 +156,7 @@ export const GenerateQR = () => {
             <ErrorMessage
               errors={errors}
               name="nombreArchivo"
-              render={({ message }) => <p>{message}</p>}
+              render={({ message }) => <p className="invalid-form">{message}</p>}
             />
           </div>
           <button type="submit">CREAR</button>

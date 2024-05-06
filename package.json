@@ -12,6 +12,7 @@
   "dependencies": {
     "@hookform/error-message": "^2.0.1",
     "@reduxjs/toolkit": "^2.2.3",
+    "@tanstack/react-table": "^8.16.0",
     "axios": "^1.6.8",
     "chart.js": "^4.4.2",
     "jsqr": "^1.4.0",

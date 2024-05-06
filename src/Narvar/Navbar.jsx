@@ -11,6 +11,9 @@ import QrPage from '../QR/QrPage';
 import InicioPage from '../Inicio/InicioPage';
 import ReportePage from '../Reportes/ReportePage';
 import { useAuthStore } from '../../hooks';
+import { TareasPage } from '../Tareas/TareasPage';
+import { CatalogosPage } from '../Catalogos/CatalogosPage';
+import { UsuariosPage } from '../Usuarios/UsuariosPage';
 
 function CustomNavbar() {
   const [expanded, setExpanded] = useState(false);
@@ -33,8 +36,11 @@ function CustomNavbar() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar} />
             <Navbar.Collapse id="basic-navbar-nav" className={expanded ? 'show' : ''}>
               <Nav className="mr-auto"> 
-                <Nav.Link as={NavLink} to={'QrScanner'}>QR TRACK</Nav.Link>
-                <Nav.Link as={NavLink} to={'REPORTE'}>REPORTES</Nav.Link>
+                <Nav.Link as={NavLink} to={'qr'}>QR TRACK</Nav.Link>
+                <Nav.Link as={NavLink} to={'reportes'}>REPORTES</Nav.Link>
+                <Nav.Link as={NavLink} to={'tareas'}>TAREAS</Nav.Link>
+                <Nav.Link as={NavLink} to={'catalogos'}>CATALOGOS</Nav.Link>
+                <Nav.Link as={NavLink} to={'usuarios'}>USUARIOS</Nav.Link>
                 <button className='float-end btn btn-danger' onClick={startLogout}>Salir</button>
               </Nav>
             </Navbar.Collapse>
@@ -42,10 +48,13 @@ function CustomNavbar() {
         </Col>
       </Row>
       <Row className='espaciopagina'>
-        <Col>
+        <Col className='mt-5'>
           <Routes>
-            <Route path={'QrScanner'} element={<QrPage/>}/>
-            <Route path={'REPORTE'} element={<ReportePage/>}/>
+            <Route path={'qr'} element={<QrPage/>}/>
+            <Route path={'reportes'} element={<ReportePage/>}/>
+            <Route path={'tareas'} element={<TareasPage/>}/>
+            <Route path={'catalogos'} element={<CatalogosPage/>}/>
+            <Route path={'usuarios'} element={<UsuariosPage/>}/>
             <Route path={'*'} element={<QrPage/>}/>
           </Routes>
         </Col>

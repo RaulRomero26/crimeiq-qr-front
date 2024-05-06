@@ -12,10 +12,10 @@ const QrPage = () => {
         <React.Fragment>
             <div className="container-fluid">
                 <div className="row justify-content-center align-items-center">
-                    <div className="col-md-12">
+                    {/* <div className="col-md-12">
                         <BotonEmegencia/>
-                    </div>
-                    <div className="col-md-12">
+                    </div> */}
+                    <div className="col-md-12 mt-5">
                         <Botones/>
                     </div>
                 </div>
