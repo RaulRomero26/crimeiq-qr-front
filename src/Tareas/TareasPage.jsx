@@ -19,10 +19,10 @@ export const TareasPage = () => {
       <div className="container container-space">
         <div className="row">
           <div className="col-md-12">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
+            <ul className="nav nav-tabs" id="myTab" role="tablist">
+              <li className="nav-item" role="presentation">
                 <button
-                  class="nav-link active"
+                  className="nav-link active"
                   id="home-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#home"
@@ -34,9 +34,9 @@ export const TareasPage = () => {
                   Agregar Tareas
                 </button>
               </li>
-              <li class="nav-item" role="presentation">
+              <li className="nav-item" role="presentation">
                 <button
-                  class="nav-link"
+                  className="nav-link"
                   id="profile-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#profile"
@@ -49,9 +49,9 @@ export const TareasPage = () => {
                 </button>
               </li>
             </ul>
-            <div class="tab-content" id="myTabContent">
+            <div className="tab-content" id="myTabContent">
               <div
-                class="tab-pane fade show active"
+                className="tab-pane fade show active"
                 id="home"
                 role="tabpanel"
                 aria-labelledby="home-tab"
@@ -59,7 +59,7 @@ export const TareasPage = () => {
                 <CrearTarea/>
               </div>
               <div
-                class="tab-pane fade"
+                className="tab-pane fade"
                 id="profile"
                 role="tabpanel"
                 aria-labelledby="profile-tab"
